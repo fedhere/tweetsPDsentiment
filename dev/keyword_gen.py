@@ -1,10 +1,31 @@
 from __future__ import print_function
+import sys
+import os
+from datetime import datetime
 import ConfigParser
+
 from config_all import *
 
-parser = ConfigParser.SafeConfigParser()
+sys.path.append(inputDIR)
+from coords import coords
 
-def generate(location, coords, short=None, gkw=False, verbose=False):
+def genplace_all(placeName):
+    '''generates keywords for a place'
+    placeName (str): the name of the place as it appears on the coordinates file
+    '''
+
+    tmp = coords[placeName]
+    tmp['state'] = placeName.split('_')[-1].upper()
+    tmp['name'] = ' '.join(placeName.split('_')[:-1])
+    tmp['name'] = tmp['name'].title()
+
+    print (tmp)
+    generate(tmp['name'], tmp['coords'], tmp['state'], 
+             short=tmp['short'], verbose=True)
+
+
+def generate(location, coords, state=None, short=None, 
+             gkw=False, verbose=False):
     """
     This function creates a config file 
     
@@ -13,54 +34,54 @@ def generate(location, coords, short=None, gkw=False, verbose=False):
          
     coords - The coordinates of the location to add to the config file
     
+    state (str) - state in which the location is, needed to generate file names
+
     short (str)- aks if there is a short version of the location name in order
-        to create a keyword with the short
+        to create a keyword with the short (default None)
         
-    gkw - general keywords. creates a config file with gkw instead of location
-        specific keywords
+    gkw (bool) - general keywords. if True creates a config file with gkw instead of location  specific keywords (default False)
          
     """
     
-    
-    track = ["police", "pd", "law", "cop"] #track is used to create location specific keywords
-    
-    general_track = ["police", "law", "cop", "law enforcement", 
-                     "criminal justice",
-                     "district attorney", "da", "lawyer", "legal", 
-                     "court", "peace", "trial",
-                     "jail", "prison", "probation", "parole", 
-                     "policing", "crime", "squad", "pigs",
-                     "5-0", "squad"] #general keywords
-                     
+    parser = ConfigParser.SafeConfigParser()
+    #regenerate file name
+    placeName = '_'.join(location.split(' ') + [state]).lower()    
+
     new_track = []
-    if gkw:
-        for i in track:
-            new_track.append(location + ' ' + i)
-            new_track.append(location + i)
+    if not gkw:
+        for words in track:
+            new_track.append(location + ' ' + words)
+            new_track.append(location + words)
         
-    
+        print (short)
         if not short is None:
-            for i in track:
-                new_track.append(location + ' ' + i)
-                new_track.append(location + i)
+            for words in track:
+                new_track.append(short + ' ' + words)
+                new_track.append(short + words)
                 
     else:
         new_track = general_track
     
     #adds sections for the config file
+
     parser.add_section('KWARGS')
-    parser.set('KWARGS', 'filepostfix', location)
+    parser.set('KWARGS', 'filepostfix', placeName)
     parser.add_section('TRACK')
     for i in range(len(new_track)):
-        
         parser.set('TRACK', 'r' + str(i+1), new_track[i])
         
     parser.add_section('LOCATIONS')
     
     for i in range(len(coords)):
         parser.set('LOCATIONS', 'loc' + str(i+1), str(coords[i]))
-        
-    outfile = workDIR + "/inputs/" + 'config_' + location + ".cfg"
+    
+    parser.add_section('DATE')
+    parser.set('DATE', 'date', datetime.today().isoformat())
+
+    outfile = inputDIR + '/placeConfigs/' + placeName + ".cfg"
+    if os.path.isfile(outfile):
+        os.system("mv " + outfile + ' ' + 
+                  outfile + '_' + datetime.today().isoformat()) 
     f = open(outfile, 'w')
     
     if verbose: 
@@ -69,3 +90,12 @@ def generate(location, coords, short=None, gkw=False, verbose=False):
     
     return
     
+if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        print ('''Usage: 
+python keyword_gen.py <place1> (<place2> ... as many as you want, min 1)
+where place needs to be one of the keywords in coords.py
+All names in coords.py are formatted as <county-or-city-name>_<state> all lower case''')
+        sys.exit()
+    for place in sys.argv[1:]:
+        genplace_all(place)

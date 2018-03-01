@@ -27,3 +27,15 @@ summarydir = 'summaries'
 
 workDIR = pathRoot + "/tweetsPDsentiment/"
 
+inputDIR = pathRoot + "/tweetsPDsentiment/inputs"
+
+track = ["police", "pd", "law", "cop"] #track is used to create location specific keywords
+    
+general_track = ["police", "law", "cop", "law enforcement", 
+                 "criminal justice",
+                 "district attorney", "da", "lawyer", "legal", 
+                 "court", "peace", "trial",
+                 "jail", "prison", "probation", "parole", 
+                 "policing", "crime", "squad", "pigs",
+                 "5-0", "squad"] #general keywords
+

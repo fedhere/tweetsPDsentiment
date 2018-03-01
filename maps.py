@@ -9,9 +9,11 @@ from shapely.geometry import Point
 import locale
 import numpy as np
 
+FILEROOT = "/gws/projects/project-tweetpdsentiment/workspace/share/betagov/"
+
 def get_data(file):
     user_jsons = []
-    with open("/gpfs1/cusp/pa1303/betagov/data/" + file, 'r') as f:
+    with open(FILEROOT + "/data/" + file, 'r') as f:
         for line in f:
             while True:
                 try:
@@ -54,15 +56,15 @@ def join_dfs(map_file, gdf):
     base['logcounts'] = np.log10(base['counts']+1) 
     return base
 
-date = dt.date.today() - dt.timedelta(days=1)
+date = dt.date.today() - dt.timedelta(days=20)
 data = get_data(str(date) + '_Police_tweets.json')
 cali_tweets = make_gdf(data)
-cali_joined = join_dfs('/gpfs1/cusp/pa1303/betagov/data/ca_counties/CA_Cities_TIGER2016.shp', cali_tweets)
+cali_joined = join_dfs(FILEROOT + '/data/ca_counties/CA_Cities_TIGER2016.shp', cali_tweets)
 
-cali_pop = pd.read_csv('/gpfs1/cusp/pa1303/betagov/data/county_pop.csv')
+cali_pop = pd.read_csv(FILEROOT + 'data/county_pop.csv')
 cali_pop = cali_pop[['State/County', 'Pop_2017']]
 cali_with_pop = cali_joined.merge(cali_pop, left_on='NAME', right_on='State/County')
-base = gpd.read_file("/gpfs1/cusp/pa1303/betagov/data/ca_tract/cb_2016_06_tract_500k.shp")
+base = gpd.read_file(FILEROOT + 'data/ca_tract/cb_2016_06_tract_500k.shp')
 base = base[base.COUNTYFP == '071']
 cali_tweets = cali_tweets.to_crs(base.crs)
 joined = gpd.sjoin(base, cali_tweets, op='intersects', how='inner')
@@ -77,7 +79,7 @@ frames = [cali_joined, base]
 cali_joined = pd.concat(frames)
 cali_joined = cali_joined[cali_joined.NAME != 'San Bernardino']
 
-newpath = r'/gpfs1/cusp/pa1303/betagov/data/' + str(date) + 'map_plots' 
+newpath = r'/gws/projects/project-tweetpdsentiment/workspace/share/betagov/data/' + str(date) + 'map_plots' 
 if not os.path.exists(newpath):
     os.makedirs(newpath)
 fig = pl.figure(figsize=(8, 18))

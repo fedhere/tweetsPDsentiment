@@ -49,6 +49,7 @@ def generate(location, coords, state=None, short=None,
 
     new_track = []
     if not gkw:
+        placeName += 'gkw'
         for words in track:
             new_track.append(location + ' ' + words)
             new_track.append(location + words)

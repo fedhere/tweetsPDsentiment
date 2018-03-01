@@ -16,32 +16,37 @@ import os
 import errno
 
 
-#For this files, tweets must be in the specific keywords and be geotagged
-
-#def jsonfile_ondata_handler(data, directory, filepostfix):
-#    tweet = json.loads(data)
-#    if 'text' in tweet.keys():
-#        if any(word in tweet['text'] for word in track):
-#            filename = join(directory, date.today().isoformat() + '_' + filepostfix + '.json')
-#            with open(filename,'a') as f:
-#                f.write(data)
-#    return True
-
 
 def make_directory(countyName, date):
-    outdirectory = pathRoot + '/data/output/' + countyName +\
-        '/tweetStreams/' + date
+    """
+    Creates a directory name
+    
+    countyName - part of the name of the directory
+    
+    date - date of the directory  being created
+    
+    """
+    
+    #pathRoot is taken from the config_all file
+    
+    outdirectory = pathRoot + '/data/output/' + countyName + '/tweetStreams/' + date
     return outdirectory
 
-def grabTweets(countyname, usetrack=False, verbose=False):
+def grabTweets(countyname, configname, usetrack=False, verbose=False):
+    """
+    Saves the tweets in a json file.
+    
+    
+    """
+    
     configs = configparser.ConfigParser()
-    configfile = workDIR + "/" + 'config_' + countyname + ".cfg"
+    configfile = inputDIR + "/placeConfigs/" + 'config_' + configname + ".cfg"
     configs.read(configfile)
     print (configs)
     outdirectory = make_directory(countyname, date.today().isoformat())
     if not os.path.isdir(outdirectory):
         try:
-            os.makedirs(os.path.dirname(outdirectory))
+            os.makedirs(outdirectory)
         except OSError as exc: # Guard against race condition
             if exc.errno != errno.EEXIST:
                 raise
@@ -55,29 +60,41 @@ def grabTweets(countyname, usetrack=False, verbose=False):
     for k in configs.options('KWARGS'):
         kwargs[k] = configs.get('KWARGS', k)
         
+    
+        
     track = [configs.get('TRACK', i) for i in configs.options('TRACK')]
+    print(track)
     
 
-    def jsonfile_ondata_handler(data, directory, filepostfix):
-        tweet = json.loads(data)
-        if 'text' in tweet.keys():
-            if any(word in tweet['text'] for word in track):
-                filename = join(directory, date.today().isoformat() + 
-                            '_' + filepostfix + '.json')
-                with open(filename,'a') as f:
-                    f.write(data)
-                
-        return True
-
-    ondata_handler = jsonfile_ondata_handler
     #just to be sure about the sorting creating an argsort from the keys
 
     if usetrack:
         locations = None
         thistrack = track
+
+
     else:
         thistrack = None
         locations = [configs.get('LOCATIONS', i) for i in configs.options('LOCATIONS')]
+        
+        
+    def jsonfile_ondata_handler(data, directory, filepostfix):
+        tweet = json.loads(data)
+        if usetrack:
+            filename = join(directory, date.today().isoformat() + '_' + filepostfix + '.json')
+            with open(filename,'a') as f:
+                f.write(data)
+        else:   
+            if 'text' in tweet.keys():
+                if any(word in tweet['text'] for word in track):
+                    filename = join(directory, date.today().isoformat() + '_' + filepostfix + '.json')
+                    with open(filename,'a') as f:
+                        f.write(data)
+                    
+        return True
+    
+
+    ondata_handler = jsonfile_ondata_handler
 
     twitStream(consumer_key = consumer_key,
                consumer_secret = consumer_secret,
@@ -88,5 +105,5 @@ def grabTweets(countyname, usetrack=False, verbose=False):
                locations = locations, #None default value
                verbose = verbose, #Display extra messages
                **kwargs)
-    
+
 

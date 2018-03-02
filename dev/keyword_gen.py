@@ -20,16 +20,20 @@ def genplace_all(placeName):
     tmp['state'] = placeName.split('_')[-1].upper()
     tmp['name'] = ' '.join(placeName.split('_')[:-1])
     tmp['name'] = tmp['name'].title()
+    handles = None
+    if tmp['handles']:
+        handles = tmp['handles']
 
     print (tmp)
     generate(tmp['name'], tmp['coords'], tmp['state'], 
-             short=tmp['short'], verbose=True)
+             short=tmp['short'], handles, verbose=True)
+    
     generate(tmp['name'], tmp['coords'], tmp['state'], 
              short=tmp['short'],gkw=True, verbose=True)
     
 
 
-def generate(location, coords, state=None, short=None, 
+def generate(location, coords, handles=None, state=None, short=None, 
              gkw=False, verbose=False):
     """
     This function creates a config file 
@@ -67,6 +71,8 @@ def generate(location, coords, state=None, short=None,
             for words in track:
                 new_track.append(short + ' ' + words)
                 new_track.append(short + words)
+                
+        new_track = new_track + handles
                 
     else:
         placeName = placeName + '_gkw'

@@ -62,7 +62,7 @@ def generate(location, coords, state=None, short=None,
             new_track.append(location.upper() + words.upper())
             new_track.append(location.title() + words.title())
         
-        print (short)
+        
         if not short is None:
             for words in track:
                 new_track.append(short + ' ' + words)
@@ -79,6 +79,7 @@ def generate(location, coords, state=None, short=None,
 
     parser.add_section('KWARGS')
     parser.set('KWARGS', 'filepostfix', placeName)
+    
     parser.add_section('TRACK')
     for i in range(len(new_track)):
         parser.set('TRACK', 'r' + str(i+1), new_track[i])

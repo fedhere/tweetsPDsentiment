@@ -40,7 +40,7 @@ def grabTweets(countyname, configname, usetrack=False, verbose=False):
     """
     
     configs = configparser.ConfigParser()
-    configfile = inputDIR + "/placeConfigs/" + 'config_' + configname + ".cfg"
+    configfile = inputDIR + "/placeConfigs/" + configname + ".cfg"
     configs.read(configfile)
     print (configs)
     outdirectory = make_directory(countyname, date.today().isoformat())
@@ -63,7 +63,7 @@ def grabTweets(countyname, configname, usetrack=False, verbose=False):
     
         
     track = [configs.get('TRACK', i) for i in configs.options('TRACK')]
-    print(track)
+    
     
 
     #just to be sure about the sorting creating an argsort from the keys

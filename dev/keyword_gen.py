@@ -1,6 +1,7 @@
 from __future__ import print_function
 import sys
 import os
+import string
 from datetime import datetime
 import ConfigParser
 
@@ -53,6 +54,9 @@ def generate(location, coords, state=None, short=None,
         for words in track:
             new_track.append(location + ' ' + words)
             new_track.append(location + words)
+            new_track.append(location.upper() + ' ' + words.upper())
+            new_track.append(location.upper() + words.upper())
+            new_track.append(location.title() + words.title())
         
         print (short)
         if not short is None:
@@ -62,6 +66,9 @@ def generate(location, coords, state=None, short=None,
                 
     else:
         new_track = general_track
+        for w in general_track:
+            new_track.append(w.upper())
+            new_track.append(w.title())
     
     #adds sections for the config file
 

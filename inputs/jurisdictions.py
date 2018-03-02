@@ -20,7 +20,7 @@ juris_dict = {
                     'coords': [-117.25708, 34.108485, -117.036929, 33.966542], 
                     'handles': []}, 
                     
-    'nashville_TN': {'short': None,
+    'nashville_tn': {'short': None,
                     'coords': [-87.045726, 35.963951, -86.518172, 36.388082], 
                     'handles': []}, 
 

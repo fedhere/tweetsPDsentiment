@@ -8,14 +8,15 @@ import ConfigParser
 from config_all import *
 
 sys.path.append(inputDIR)
-from coords import coords
+#from coords import coords
+from jurisdictions import juris_dict
 
 def genplace_all(placeName):
     '''generates keywords for a place'
     placeName (str): the name of the place as it appears on the coordinates file
     '''
 
-    tmp = coords[placeName]
+    tmp = juris_dict[placeName]
     tmp['state'] = placeName.split('_')[-1].upper()
     tmp['name'] = ' '.join(placeName.split('_')[:-1])
     tmp['name'] = tmp['name'].title()
@@ -23,6 +24,9 @@ def genplace_all(placeName):
     print (tmp)
     generate(tmp['name'], tmp['coords'], tmp['state'], 
              short=tmp['short'], verbose=True)
+    generate(tmp['name'], tmp['coords'], tmp['state'], 
+             short=tmp['short'],gkw=True, verbose=True)
+    
 
 
 def generate(location, coords, state=None, short=None, 
@@ -50,7 +54,7 @@ def generate(location, coords, state=None, short=None,
 
     new_track = []
     if not gkw:
-        placeName += 'gkw'
+        
         for words in track:
             new_track.append(location + ' ' + words)
             new_track.append(location + words)
@@ -65,8 +69,9 @@ def generate(location, coords, state=None, short=None,
                 new_track.append(short + words)
                 
     else:
-        new_track = general_track
+        placeName = placeName + '_gkw'
         for w in general_track:
+            new_track.append(w)
             new_track.append(w.upper())
             new_track.append(w.title())
     

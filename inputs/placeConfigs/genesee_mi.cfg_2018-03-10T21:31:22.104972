@@ -1,0 +1,44 @@
+[KWARGS]
+filepostfix = genesee_mi
+
+[TRACK]
+r1 = Genesee police
+r2 = Geneseepolice
+r3 = GENESEE POLICE
+r4 = GENESEEPOLICE
+r5 = GeneseePolice
+r6 = Genesee pd
+r7 = Geneseepd
+r8 = GENESEE PD
+r9 = GENESEEPD
+r10 = GeneseePd
+r11 = Genesee law
+r12 = Geneseelaw
+r13 = GENESEE LAW
+r14 = GENESEELAW
+r15 = GeneseeLaw
+r16 = Genesee cop
+r17 = Geneseecop
+r18 = GENESEE COP
+r19 = GENESEECOP
+r20 = GeneseeCop
+r21 = Genesee laws
+r22 = Geneseelaws
+r23 = GENESEE LAWS
+r24 = GENESEELAWS
+r25 = GeneseeLaws
+r26 = Genesee cops
+r27 = Geneseecops
+r28 = GENESEE COPS
+r29 = GENESEECOPS
+r30 = GeneseeCops
+
+[LOCATIONS]
+loc1 = -83.699419
+loc2 = 43.045778
+loc3 = -83.573077
+loc4 = 43.138292
+
+[DATE]
+date = 2018-03-01T20:02:22.947219
+

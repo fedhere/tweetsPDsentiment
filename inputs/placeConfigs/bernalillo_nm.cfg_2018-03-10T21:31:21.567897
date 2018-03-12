@@ -1,0 +1,44 @@
+[KWARGS]
+filepostfix = bernalillo_nm
+
+[TRACK]
+r1 = Bernalillo police
+r2 = Bernalillopolice
+r3 = BERNALILLO POLICE
+r4 = BERNALILLOPOLICE
+r5 = BernalilloPolice
+r6 = Bernalillo pd
+r7 = Bernalillopd
+r8 = BERNALILLO PD
+r9 = BERNALILLOPD
+r10 = BernalilloPd
+r11 = Bernalillo law
+r12 = Bernalillolaw
+r13 = BERNALILLO LAW
+r14 = BERNALILLOLAW
+r15 = BernalilloLaw
+r16 = Bernalillo cop
+r17 = Bernalillocop
+r18 = BERNALILLO COP
+r19 = BERNALILLOCOP
+r20 = BernalilloCop
+r21 = Bernalillo laws
+r22 = Bernalillolaws
+r23 = BERNALILLO LAWS
+r24 = BERNALILLOLAWS
+r25 = BernalilloLaws
+r26 = Bernalillo cops
+r27 = Bernalillocops
+r28 = BERNALILLO COPS
+r29 = BERNALILLOCOPS
+r30 = BernalilloCops
+
+[LOCATIONS]
+loc1 = -106.585276
+loc2 = 35.28749
+loc3 = -106.517601
+loc4 = 35.337001
+
+[DATE]
+date = 2018-03-01T20:02:22.966675
+

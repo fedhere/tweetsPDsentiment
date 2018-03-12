@@ -1,0 +1,71 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = new_york_ny
+
+[TRACK]
+r1 = New York police
+r2 = New Yorkpolice
+r3 = NEW YORK POLICE
+r4 = NEW YORKPOLICE
+r5 = New YorkPolice
+r6 = New York pd
+r7 = New Yorkpd
+r8 = NEW YORK PD
+r9 = NEW YORKPD
+r10 = New YorkPd
+r11 = New York law
+r12 = New Yorklaw
+r13 = NEW YORK LAW
+r14 = NEW YORKLAW
+r15 = New YorkLaw
+r16 = New York cop
+r17 = New Yorkcop
+r18 = NEW YORK COP
+r19 = NEW YORKCOP
+r20 = New YorkCop
+r21 = New York laws
+r22 = New Yorklaws
+r23 = NEW YORK LAWS
+r24 = NEW YORKLAWS
+r25 = New YorkLaws
+r26 = New York cops
+r27 = New Yorkcops
+r28 = NEW YORK COPS
+r29 = NEW YORKCOPS
+r30 = New YorkCops
+r31 = NYC police
+r32 = NYCpolice
+r33 = NYC pd
+r34 = NYCpd
+r35 = NYC law
+r36 = NYClaw
+r37 = NYC cop
+r38 = NYCcop
+r39 = NYC laws
+r40 = NYClaws
+r41 = NYC cops
+r42 = NYCcops
+r43 = NYPDnews
+r44 = NYPDChiefofDept
+r45 = NYPDTransit
+r46 = manhattanda
+r47 = brooklynda
+r48 = bronxdaclark
+r49 = QueensDABrown
+r50 = NYPD
+r51 = NYDA
+
+[LOCATIONS]
+loc1 = -74.257118
+loc2 = 40.485452
+loc3 = -73.700254
+loc4 = 40.911309
+
+[DATE]
+date = 2018-03-10T21:31:22.556194
+

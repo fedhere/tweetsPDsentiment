@@ -11,7 +11,12 @@ sys.path.append(inputDIR)
 #from coords import coords
 from jurisdictions import juris_dict
 
-def genplace_all(placeName):
+def get_keys(line):
+    line = line.replace('\n', '')
+    line = line.split(',')
+    return line
+
+def genplace_all(placeName, s):
     '''generates keywords for a place'
     placeName (str): the name of the place as it appears on the coordinates file
     '''
@@ -25,15 +30,15 @@ def genplace_all(placeName):
         handles = tmp['handles']
 
     print (tmp)
-    generate(tmp['name'], tmp['coords'], tmp['state'], 
-             short=tmp['short'], handles, verbose=True)
+    generate(tmp['name'], tmp['coords'], kw=tmp['keywords'], line=s, state=tmp['state'], 
+             short=tmp['short'], handles=handles, verbose=True)
     
-    generate(tmp['name'], tmp['coords'], tmp['state'], 
-             short=tmp['short'],gkw=True, verbose=True)
+    generate(tmp['name'], tmp['coords'], kw=tmp['keywords'], line=s, state=tmp['state'], 
+             short=tmp['short'], gkw=True, verbose=True)
     
 
 
-def generate(location, coords, handles=None, state=None, short=None, 
+def generate(location, coords, kw, line, handles=None, state=None, short=None, 
              gkw=False, verbose=False):
     """
     This function creates a config file 
@@ -52,6 +57,7 @@ def generate(location, coords, handles=None, state=None, short=None,
          
     """
     
+
     parser = ConfigParser.SafeConfigParser()
     #regenerate file name
     placeName = '_'.join(location.split(' ') + [state]).lower()    
@@ -71,8 +77,10 @@ def generate(location, coords, handles=None, state=None, short=None,
             for words in track:
                 new_track.append(short + ' ' + words)
                 new_track.append(short + words)
-                
-        new_track = new_track + handles
+        if not handles is None:
+            new_track = new_track + handles
+            
+        new_track = new_track + kw
                 
     else:
         placeName = placeName + '_gkw'
@@ -82,7 +90,13 @@ def generate(location, coords, handles=None, state=None, short=None,
             new_track.append(w.title())
     
     #adds sections for the config file
-
+    tokens = get_keys(line)
+    parser.add_section('API')
+    parser.set('API', 'consumer_key', tokens[0])
+    parser.set('API', 'consumer_secret', tokens[1])
+    parser.set('API', 'access_token', tokens[2])
+    parser.set('API', 'access_secret', tokens[3])
+    
     parser.add_section('KWARGS')
     parser.set('KWARGS', 'filepostfix', placeName)
     
@@ -117,5 +131,12 @@ python keyword_gen.py <place1> (<place2> ... as many as you want, min 1)
 where place needs to be one of the keywords in coords.py
 All names in coords.py are formatted as <county-or-city-name>_<state> all lower case''')
         sys.exit()
-    for place in sys.argv[1:]:
-        genplace_all(place)
+    key_path = pathRoot + '/data/input/keys.csv'
+    f = open(key_path, 'r')
+    for i in range(len(sys.argv[1:])):
+        
+        if i % 4 == 0:
+            l = f.readline()
+                   
+        place = sys.argv[i+1]
+        genplace_all(place ,l)

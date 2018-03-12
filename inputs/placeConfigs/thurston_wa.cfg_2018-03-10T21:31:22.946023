@@ -1,0 +1,44 @@
+[KWARGS]
+filepostfix = thurston_wa
+
+[TRACK]
+r1 = Thurston police
+r2 = Thurstonpolice
+r3 = THURSTON POLICE
+r4 = THURSTONPOLICE
+r5 = ThurstonPolice
+r6 = Thurston pd
+r7 = Thurstonpd
+r8 = THURSTON PD
+r9 = THURSTONPD
+r10 = ThurstonPd
+r11 = Thurston law
+r12 = Thurstonlaw
+r13 = THURSTON LAW
+r14 = THURSTONLAW
+r15 = ThurstonLaw
+r16 = Thurston cop
+r17 = Thurstoncop
+r18 = THURSTON COP
+r19 = THURSTONCOP
+r20 = ThurstonCop
+r21 = Thurston laws
+r22 = Thurstonlaws
+r23 = THURSTON LAWS
+r24 = THURSTONLAWS
+r25 = ThurstonLaws
+r26 = Thurston cops
+r27 = Thurstoncops
+r28 = THURSTON COPS
+r29 = THURSTONCOPS
+r30 = ThurstonCops
+
+[LOCATIONS]
+loc1 = -123.234222
+loc2 = 46.762798
+loc3 = -122.14806
+loc4 = 47.189895
+
+[DATE]
+date = 2018-03-01T20:02:23.002872
+

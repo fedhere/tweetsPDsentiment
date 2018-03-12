@@ -11,10 +11,11 @@ python keyword_gen.py <place> place needs to be one of the keywords in jurisdict
 All names in coords.py are formatted as <county-or-city-name>_<state> all lower case''')
         sys.exit()
         
-    loc = sys.argv[1]
-    loc_gkw = loc + "_gkw"
+    for arg in sys.argv[1:]:
+        loc = arg    
+        loc_gkw = loc + "_gkw"
         
 
-    grabTweets(loc, loc, usetrack=True)
-    
-    grabTweets(loc, loc_gkw, usetrack=False)
+        grabTweets(loc, loc, usetrack=True)
+        print ("hello")
+        grabTweets(loc, loc_gkw, usetrack=False)

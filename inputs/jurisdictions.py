@@ -120,7 +120,7 @@ juris_dict = {
     'washington_dc': 
                     {'short': 'District of Columbia',
                     'coords': [-77.11539, 38.830883, -76.894947, 38.994653],
-                    'handles': ['DCPoliceDept','usao_dc']
+                    'handles': ['DCPoliceDept','usao_dc'],
                     'keywords': ['Attorney for the District of Columbia','US Attorney']},  
 
     'chicago_il': 

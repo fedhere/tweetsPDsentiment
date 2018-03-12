@@ -1,0 +1,64 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = genesee_mi
+
+[TRACK]
+r1 = Genesee police
+r2 = Geneseepolice
+r3 = GENESEE POLICE
+r4 = GENESEEPOLICE
+r5 = GeneseePolice
+r6 = Genesee pd
+r7 = Geneseepd
+r8 = GENESEE PD
+r9 = GENESEEPD
+r10 = GeneseePd
+r11 = Genesee law
+r12 = Geneseelaw
+r13 = GENESEE LAW
+r14 = GENESEELAW
+r15 = GeneseeLaw
+r16 = Genesee cop
+r17 = Geneseecop
+r18 = GENESEE COP
+r19 = GENESEECOP
+r20 = GeneseeCop
+r21 = Genesee laws
+r22 = Geneseelaws
+r23 = GENESEE LAWS
+r24 = GENESEELAWS
+r25 = GeneseeLaws
+r26 = Genesee cops
+r27 = Geneseecops
+r28 = GENESEE COPS
+r29 = GENESEECOPS
+r30 = GeneseeCops
+r31 = Flint police
+r32 = Flintpolice
+r33 = Flint pd
+r34 = Flintpd
+r35 = Flint law
+r36 = Flintlaw
+r37 = Flint cop
+r38 = Flintcop
+r39 = Flint laws
+r40 = Flintlaws
+r41 = Flint cops
+r42 = Flintcops
+r43 = flintpoliceops
+r44 = Prosecuting Attorney
+
+[LOCATIONS]
+loc1 = -83.699419
+loc2 = 43.045778
+loc3 = -83.573077
+loc4 = 43.138292
+
+[DATE]
+date = 2018-03-10T21:31:22.104907
+

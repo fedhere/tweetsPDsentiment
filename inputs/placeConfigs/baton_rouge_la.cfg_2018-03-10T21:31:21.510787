@@ -1,0 +1,44 @@
+[KWARGS]
+filepostfix = baton_rouge_la
+
+[TRACK]
+r1 = Baton Rouge police
+r2 = Baton Rougepolice
+r3 = BATON ROUGE POLICE
+r4 = BATON ROUGEPOLICE
+r5 = Baton RougePolice
+r6 = Baton Rouge pd
+r7 = Baton Rougepd
+r8 = BATON ROUGE PD
+r9 = BATON ROUGEPD
+r10 = Baton RougePd
+r11 = Baton Rouge law
+r12 = Baton Rougelaw
+r13 = BATON ROUGE LAW
+r14 = BATON ROUGELAW
+r15 = Baton RougeLaw
+r16 = Baton Rouge cop
+r17 = Baton Rougecop
+r18 = BATON ROUGE COP
+r19 = BATON ROUGECOP
+r20 = Baton RougeCop
+r21 = Baton Rouge laws
+r22 = Baton Rougelaws
+r23 = BATON ROUGE LAWS
+r24 = BATON ROUGELAWS
+r25 = Baton RougeLaws
+r26 = Baton Rouge cops
+r27 = Baton Rougecops
+r28 = BATON ROUGE COPS
+r29 = BATON ROUGECOPS
+r30 = Baton RougeCops
+
+[LOCATIONS]
+loc1 = -91.320497
+loc2 = 30.291573
+loc3 = -90.829456
+loc4 = 30.734743
+
+[DATE]
+date = 2018-03-01T20:02:22.952787
+

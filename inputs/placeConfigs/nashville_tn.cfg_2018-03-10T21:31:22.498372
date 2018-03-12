@@ -1,0 +1,44 @@
+[KWARGS]
+filepostfix = nashville_tn
+
+[TRACK]
+r1 = Nashville police
+r2 = Nashvillepolice
+r3 = NASHVILLE POLICE
+r4 = NASHVILLEPOLICE
+r5 = NashvillePolice
+r6 = Nashville pd
+r7 = Nashvillepd
+r8 = NASHVILLE PD
+r9 = NASHVILLEPD
+r10 = NashvillePd
+r11 = Nashville law
+r12 = Nashvillelaw
+r13 = NASHVILLE LAW
+r14 = NASHVILLELAW
+r15 = NashvilleLaw
+r16 = Nashville cop
+r17 = Nashvillecop
+r18 = NASHVILLE COP
+r19 = NASHVILLECOP
+r20 = NashvilleCop
+r21 = Nashville laws
+r22 = Nashvillelaws
+r23 = NASHVILLE LAWS
+r24 = NASHVILLELAWS
+r25 = NashvilleLaws
+r26 = Nashville cops
+r27 = Nashvillecops
+r28 = NASHVILLE COPS
+r29 = NASHVILLECOPS
+r30 = NashvilleCops
+
+[LOCATIONS]
+loc1 = -87.045726
+loc2 = 35.963951
+loc3 = -86.518172
+loc4 = 36.388082
+
+[DATE]
+date = 2018-03-01T20:02:23.024999
+

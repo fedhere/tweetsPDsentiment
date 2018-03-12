@@ -1,0 +1,44 @@
+[KWARGS]
+filepostfix = san_luis_obispo_ca
+
+[TRACK]
+r1 = San Luis Obispo police
+r2 = San Luis Obispopolice
+r3 = SAN LUIS OBISPO POLICE
+r4 = SAN LUIS OBISPOPOLICE
+r5 = San Luis ObispoPolice
+r6 = San Luis Obispo pd
+r7 = San Luis Obispopd
+r8 = SAN LUIS OBISPO PD
+r9 = SAN LUIS OBISPOPD
+r10 = San Luis ObispoPd
+r11 = San Luis Obispo law
+r12 = San Luis Obispolaw
+r13 = SAN LUIS OBISPO LAW
+r14 = SAN LUIS OBISPOLAW
+r15 = San Luis ObispoLaw
+r16 = San Luis Obispo cop
+r17 = San Luis Obispocop
+r18 = SAN LUIS OBISPO COP
+r19 = SAN LUIS OBISPOCOP
+r20 = San Luis ObispoCop
+r21 = San Luis Obispo laws
+r22 = San Luis Obispolaws
+r23 = SAN LUIS OBISPO LAWS
+r24 = SAN LUIS OBISPOLAWS
+r25 = San Luis ObispoLaws
+r26 = San Luis Obispo cops
+r27 = San Luis Obispocops
+r28 = SAN LUIS OBISPO COPS
+r29 = SAN LUIS OBISPOCOPS
+r30 = San Luis ObispoCops
+
+[LOCATIONS]
+loc1 = -120.726177
+loc2 = 35.237026
+loc3 = -120.616828
+loc4 = 35.313684
+
+[DATE]
+date = 2018-03-01T20:02:22.979568
+

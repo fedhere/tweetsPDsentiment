@@ -1,0 +1,52 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = santa_clara_ca
+
+[TRACK]
+r1 = Santa Clara police
+r2 = Santa Clarapolice
+r3 = SANTA CLARA POLICE
+r4 = SANTA CLARAPOLICE
+r5 = Santa ClaraPolice
+r6 = Santa Clara pd
+r7 = Santa Clarapd
+r8 = SANTA CLARA PD
+r9 = SANTA CLARAPD
+r10 = Santa ClaraPd
+r11 = Santa Clara law
+r12 = Santa Claralaw
+r13 = SANTA CLARA LAW
+r14 = SANTA CLARALAW
+r15 = Santa ClaraLaw
+r16 = Santa Clara cop
+r17 = Santa Claracop
+r18 = SANTA CLARA COP
+r19 = SANTA CLARACOP
+r20 = Santa ClaraCop
+r21 = Santa Clara laws
+r22 = Santa Claralaws
+r23 = SANTA CLARA LAWS
+r24 = SANTA CLARALAWS
+r25 = Santa ClaraLaws
+r26 = Santa Clara cops
+r27 = Santa Claracops
+r28 = SANTA CLARA COPS
+r29 = SANTA CLARACOPS
+r30 = Santa ClaraCops
+r31 = santaclarapd
+r32 = santaclarada
+
+[LOCATIONS]
+loc1 = -122.027937
+loc2 = 37.31364
+loc3 = -121.922101
+loc4 = 37.424878
+
+[DATE]
+date = 2018-03-10T21:31:22.834666
+

@@ -1,0 +1,52 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = nashville_tn
+
+[TRACK]
+r1 = Nashville police
+r2 = Nashvillepolice
+r3 = NASHVILLE POLICE
+r4 = NASHVILLEPOLICE
+r5 = NashvillePolice
+r6 = Nashville pd
+r7 = Nashvillepd
+r8 = NASHVILLE PD
+r9 = NASHVILLEPD
+r10 = NashvillePd
+r11 = Nashville law
+r12 = Nashvillelaw
+r13 = NASHVILLE LAW
+r14 = NASHVILLELAW
+r15 = NashvilleLaw
+r16 = Nashville cop
+r17 = Nashvillecop
+r18 = NASHVILLE COP
+r19 = NASHVILLECOP
+r20 = NashvilleCop
+r21 = Nashville laws
+r22 = Nashvillelaws
+r23 = NASHVILLE LAWS
+r24 = NASHVILLELAWS
+r25 = NashvilleLaws
+r26 = Nashville cops
+r27 = Nashvillecops
+r28 = NASHVILLE COPS
+r29 = NASHVILLECOPS
+r30 = NashvilleCops
+r31 = MNPDNashville
+r32 = davidsoncoda
+
+[LOCATIONS]
+loc1 = -87.045726
+loc2 = 35.963951
+loc3 = -86.518172
+loc4 = 36.388082
+
+[DATE]
+date = 2018-03-10T21:31:22.498308
+

@@ -1,0 +1,56 @@
+[KWARGS]
+filepostfix = los_angeles_ca
+
+[TRACK]
+r1 = Los Angeles police
+r2 = Los Angelespolice
+r3 = LOS ANGELES POLICE
+r4 = LOS ANGELESPOLICE
+r5 = Los AngelesPolice
+r6 = Los Angeles pd
+r7 = Los Angelespd
+r8 = LOS ANGELES PD
+r9 = LOS ANGELESPD
+r10 = Los AngelesPd
+r11 = Los Angeles law
+r12 = Los Angeleslaw
+r13 = LOS ANGELES LAW
+r14 = LOS ANGELESLAW
+r15 = Los AngelesLaw
+r16 = Los Angeles cop
+r17 = Los Angelescop
+r18 = LOS ANGELES COP
+r19 = LOS ANGELESCOP
+r20 = Los AngelesCop
+r21 = Los Angeles laws
+r22 = Los Angeleslaws
+r23 = LOS ANGELES LAWS
+r24 = LOS ANGELESLAWS
+r25 = Los AngelesLaws
+r26 = Los Angeles cops
+r27 = Los Angelescops
+r28 = LOS ANGELES COPS
+r29 = LOS ANGELESCOPS
+r30 = Los AngelesCops
+r31 = LA police
+r32 = LApolice
+r33 = LA pd
+r34 = LApd
+r35 = LA law
+r36 = LAlaw
+r37 = LA cop
+r38 = LAcop
+r39 = LA laws
+r40 = LAlaws
+r41 = LA cops
+r42 = LAcops
+
+[LOCATIONS]
+loc1 = -118.694684
+loc2 = 33.558664
+loc3 = -117.858083
+loc4 = 34.35037
+
+[DATE]
+date = 2018-03-08T15:15:39.824026
+

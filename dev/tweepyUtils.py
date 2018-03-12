@@ -64,6 +64,10 @@ def grabTweets(countyname, configname, usetrack=False, verbose=False):
         
     track = [configs.get('TRACK', i) for i in configs.options('TRACK')]
     
+    consumer_key = configs.get('API', 'consumer_key')
+    consumer_secret = configs.get('API', 'consumer_secret')
+    access_token = configs.get('API', 'access_token')
+    access_secret = configs.get('API', 'access_secret')
     
 
     #just to be sure about the sorting creating an argsort from the keys
@@ -105,5 +109,6 @@ def grabTweets(countyname, configname, usetrack=False, verbose=False):
                locations = locations, #None default value
                verbose = verbose, #Display extra messages
                **kwargs)
+    return 0
 
 

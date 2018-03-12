@@ -1,0 +1,52 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = douglas_co
+
+[TRACK]
+r1 = Douglas police
+r2 = Douglaspolice
+r3 = DOUGLAS POLICE
+r4 = DOUGLASPOLICE
+r5 = DouglasPolice
+r6 = Douglas pd
+r7 = Douglaspd
+r8 = DOUGLAS PD
+r9 = DOUGLASPD
+r10 = DouglasPd
+r11 = Douglas law
+r12 = Douglaslaw
+r13 = DOUGLAS LAW
+r14 = DOUGLASLAW
+r15 = DouglasLaw
+r16 = Douglas cop
+r17 = Douglascop
+r18 = DOUGLAS COP
+r19 = DOUGLASCOP
+r20 = DouglasCop
+r21 = Douglas laws
+r22 = Douglaslaws
+r23 = DOUGLAS LAWS
+r24 = DOUGLASLAWS
+r25 = DouglasLaws
+r26 = Douglas cops
+r27 = Douglascops
+r28 = DOUGLAS COPS
+r29 = DOUGLASCOPS
+r30 = DouglasCops
+r31 = dcsheriff
+r32 = DA18th
+
+[LOCATIONS]
+loc1 = -105.309384
+loc2 = 39.109217
+loc3 = -104.647458
+loc4 = 39.573343
+
+[DATE]
+date = 2018-03-10T21:31:21.822288
+

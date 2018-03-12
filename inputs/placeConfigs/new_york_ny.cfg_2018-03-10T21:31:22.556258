@@ -1,0 +1,56 @@
+[KWARGS]
+filepostfix = new_york_ny
+
+[TRACK]
+r1 = New York police
+r2 = New Yorkpolice
+r3 = NEW YORK POLICE
+r4 = NEW YORKPOLICE
+r5 = New YorkPolice
+r6 = New York pd
+r7 = New Yorkpd
+r8 = NEW YORK PD
+r9 = NEW YORKPD
+r10 = New YorkPd
+r11 = New York law
+r12 = New Yorklaw
+r13 = NEW YORK LAW
+r14 = NEW YORKLAW
+r15 = New YorkLaw
+r16 = New York cop
+r17 = New Yorkcop
+r18 = NEW YORK COP
+r19 = NEW YORKCOP
+r20 = New YorkCop
+r21 = New York laws
+r22 = New Yorklaws
+r23 = NEW YORK LAWS
+r24 = NEW YORKLAWS
+r25 = New YorkLaws
+r26 = New York cops
+r27 = New Yorkcops
+r28 = NEW YORK COPS
+r29 = NEW YORKCOPS
+r30 = New YorkCops
+r31 = NY police
+r32 = NYpolice
+r33 = NY pd
+r34 = NYpd
+r35 = NY law
+r36 = NYlaw
+r37 = NY cop
+r38 = NYcop
+r39 = NY laws
+r40 = NYlaws
+r41 = NY cops
+r42 = NYcops
+
+[LOCATIONS]
+loc1 = -74.257118
+loc2 = 40.485452
+loc3 = -73.700254
+loc4 = 40.911309
+
+[DATE]
+date = 2018-03-01T20:02:23.038525
+

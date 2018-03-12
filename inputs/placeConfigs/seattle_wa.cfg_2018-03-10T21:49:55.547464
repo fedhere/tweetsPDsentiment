@@ -1,0 +1,52 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = seattle_wa
+
+[TRACK]
+r1 = Seattle police
+r2 = Seattlepolice
+r3 = SEATTLE POLICE
+r4 = SEATTLEPOLICE
+r5 = SeattlePolice
+r6 = Seattle pd
+r7 = Seattlepd
+r8 = SEATTLE PD
+r9 = SEATTLEPD
+r10 = SeattlePd
+r11 = Seattle law
+r12 = Seattlelaw
+r13 = SEATTLE LAW
+r14 = SEATTLELAW
+r15 = SeattleLaw
+r16 = Seattle cop
+r17 = Seattlecop
+r18 = SEATTLE COP
+r19 = SEATTLECOP
+r20 = SeattleCop
+r21 = Seattle laws
+r22 = Seattlelaws
+r23 = SEATTLE LAWS
+r24 = SEATTLELAWS
+r25 = SeattleLaws
+r26 = Seattle cops
+r27 = Seattlecops
+r28 = SEATTLE COPS
+r29 = SEATTLECOPS
+r30 = SeattleCops
+r31 = SeattlePD
+r32 = kcprosecutor
+
+[LOCATIONS]
+loc1 = -122.445623
+loc2 = 47.491494
+loc3 = -122.226861
+loc4 = 47.737144
+
+[DATE]
+date = 2018-03-10T21:31:22.888177
+

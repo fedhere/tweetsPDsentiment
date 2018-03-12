@@ -1,0 +1,44 @@
+[KWARGS]
+filepostfix = chicago_il
+
+[TRACK]
+r1 = Chicago police
+r2 = Chicagopolice
+r3 = CHICAGO POLICE
+r4 = CHICAGOPOLICE
+r5 = ChicagoPolice
+r6 = Chicago pd
+r7 = Chicagopd
+r8 = CHICAGO PD
+r9 = CHICAGOPD
+r10 = ChicagoPd
+r11 = Chicago law
+r12 = Chicagolaw
+r13 = CHICAGO LAW
+r14 = CHICAGOLAW
+r15 = ChicagoLaw
+r16 = Chicago cop
+r17 = Chicagocop
+r18 = CHICAGO COP
+r19 = CHICAGOCOP
+r20 = ChicagoCop
+r21 = Chicago laws
+r22 = Chicagolaws
+r23 = CHICAGO LAWS
+r24 = CHICAGOLAWS
+r25 = ChicagoLaws
+r26 = Chicago cops
+r27 = Chicagocops
+r28 = CHICAGO COPS
+r29 = CHICAGOCOPS
+r30 = ChicagoCops
+
+[LOCATIONS]
+loc1 = -87.971568
+loc2 = 41.630378
+loc3 = -87.490656
+loc4 = 42.047215
+
+[DATE]
+date = 2018-03-01T20:02:23.016332
+

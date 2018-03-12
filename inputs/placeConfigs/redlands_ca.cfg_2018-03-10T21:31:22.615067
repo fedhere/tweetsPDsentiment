@@ -1,0 +1,44 @@
+[KWARGS]
+filepostfix = redlands_ca
+
+[TRACK]
+r1 = Redlands police
+r2 = Redlandspolice
+r3 = REDLANDS POLICE
+r4 = REDLANDSPOLICE
+r5 = RedlandsPolice
+r6 = Redlands pd
+r7 = Redlandspd
+r8 = REDLANDS PD
+r9 = REDLANDSPD
+r10 = RedlandsPd
+r11 = Redlands law
+r12 = Redlandslaw
+r13 = REDLANDS LAW
+r14 = REDLANDSLAW
+r15 = RedlandsLaw
+r16 = Redlands cop
+r17 = Redlandscop
+r18 = REDLANDS COP
+r19 = REDLANDSCOP
+r20 = RedlandsCop
+r21 = Redlands laws
+r22 = Redlandslaws
+r23 = REDLANDS LAWS
+r24 = REDLANDSLAWS
+r25 = RedlandsLaws
+r26 = Redlands cops
+r27 = Redlandscops
+r28 = REDLANDS COPS
+r29 = REDLANDSCOPS
+r30 = RedlandsCops
+
+[LOCATIONS]
+loc1 = -117.25708
+loc2 = 34.108485
+loc3 = -117.036929
+loc4 = 33.966542
+
+[DATE]
+date = 2018-03-01T20:02:22.936985
+

@@ -1,0 +1,66 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = washington_dc
+
+[TRACK]
+r1 = Washington police
+r2 = Washingtonpolice
+r3 = WASHINGTON POLICE
+r4 = WASHINGTONPOLICE
+r5 = WashingtonPolice
+r6 = Washington pd
+r7 = Washingtonpd
+r8 = WASHINGTON PD
+r9 = WASHINGTONPD
+r10 = WashingtonPd
+r11 = Washington law
+r12 = Washingtonlaw
+r13 = WASHINGTON LAW
+r14 = WASHINGTONLAW
+r15 = WashingtonLaw
+r16 = Washington cop
+r17 = Washingtoncop
+r18 = WASHINGTON COP
+r19 = WASHINGTONCOP
+r20 = WashingtonCop
+r21 = Washington laws
+r22 = Washingtonlaws
+r23 = WASHINGTON LAWS
+r24 = WASHINGTONLAWS
+r25 = WashingtonLaws
+r26 = Washington cops
+r27 = Washingtoncops
+r28 = WASHINGTON COPS
+r29 = WASHINGTONCOPS
+r30 = WashingtonCops
+r31 = District of Columbia police
+r32 = District of Columbiapolice
+r33 = District of Columbia pd
+r34 = District of Columbiapd
+r35 = District of Columbia law
+r36 = District of Columbialaw
+r37 = District of Columbia cop
+r38 = District of Columbiacop
+r39 = District of Columbia laws
+r40 = District of Columbialaws
+r41 = District of Columbia cops
+r42 = District of Columbiacops
+r43 = DCPoliceDept
+r44 = usao_dc
+r45 = Attorney for the District of Columbia
+r46 = US Attorney
+
+[LOCATIONS]
+loc1 = -77.11539
+loc2 = 38.830883
+loc3 = -76.894947
+loc4 = 38.994653
+
+[DATE]
+date = 2018-03-10T21:31:23.004469
+

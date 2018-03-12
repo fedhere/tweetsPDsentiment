@@ -1,0 +1,44 @@
+[KWARGS]
+filepostfix = erie_ny
+
+[TRACK]
+r1 = Erie police
+r2 = Eriepolice
+r3 = ERIE POLICE
+r4 = ERIEPOLICE
+r5 = EriePolice
+r6 = Erie pd
+r7 = Eriepd
+r8 = ERIE PD
+r9 = ERIEPD
+r10 = EriePd
+r11 = Erie law
+r12 = Erielaw
+r13 = ERIE LAW
+r14 = ERIELAW
+r15 = ErieLaw
+r16 = Erie cop
+r17 = Eriecop
+r18 = ERIE COP
+r19 = ERIECOP
+r20 = ErieCop
+r21 = Erie laws
+r22 = Erielaws
+r23 = ERIE LAWS
+r24 = ERIELAWS
+r25 = ErieLaws
+r26 = Erie cops
+r27 = Eriecops
+r28 = ERIE COPS
+r29 = ERIECOPS
+r30 = ErieCops
+
+[LOCATIONS]
+loc1 = -79.156287
+loc2 = 42.47089
+loc3 = -78.424323
+loc4 = 43.091765
+
+[DATE]
+date = 2018-03-01T20:02:22.973403
+

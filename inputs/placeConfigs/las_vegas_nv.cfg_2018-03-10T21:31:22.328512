@@ -1,0 +1,44 @@
+[KWARGS]
+filepostfix = las_vegas_nv
+
+[TRACK]
+r1 = Las Vegas police
+r2 = Las Vegaspolice
+r3 = LAS VEGAS POLICE
+r4 = LAS VEGASPOLICE
+r5 = Las VegasPolice
+r6 = Las Vegas pd
+r7 = Las Vegaspd
+r8 = LAS VEGAS PD
+r9 = LAS VEGASPD
+r10 = Las VegasPd
+r11 = Las Vegas law
+r12 = Las Vegaslaw
+r13 = LAS VEGAS LAW
+r14 = LAS VEGASLAW
+r15 = Las VegasLaw
+r16 = Las Vegas cop
+r17 = Las Vegascop
+r18 = LAS VEGAS COP
+r19 = LAS VEGASCOP
+r20 = Las VegasCop
+r21 = Las Vegas laws
+r22 = Las Vegaslaws
+r23 = LAS VEGAS LAWS
+r24 = LAS VEGASLAWS
+r25 = Las VegasLaws
+r26 = Las Vegas cops
+r27 = Las Vegascops
+r28 = LAS VEGAS COPS
+r29 = LAS VEGASCOPS
+r30 = Las VegasCops
+
+[LOCATIONS]
+loc1 = -115.447428
+loc2 = 36.01523
+loc3 = -115.006297
+loc4 = 36.384162
+
+[DATE]
+date = 2018-03-01T20:02:22.986740
+

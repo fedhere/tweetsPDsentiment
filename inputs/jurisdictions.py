@@ -169,5 +169,10 @@ juris_dict = {
                     {'short': None,
                     'coords': [-81.389102, 33.75143, -80.568427, 34.260967],
                     'handles': ['rcsd'],
-                    'keywords': ["Solicitor's Office"]}
+                    'keywords': ["Solicitor's Office"]},
+    'Calgary_ab': 
+                    {'short': None,
+                    'coords': [-114.258890, 50.827951, -113.893595, 51.193437],
+                    'handles': ['calgarypolice','rcmpalberta'],
+                    'keywords': ["Stampede","Rodeo"]}
 }

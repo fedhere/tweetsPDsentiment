@@ -32,7 +32,7 @@ def make_directory(countyName, date):
     outdirectory = pathRoot + '/data/output/' + countyName + '/tweetStreams/' + date
     return outdirectory
 
-def grabTweets(countyname, configname, usetrack=False, verbose=False):
+def grabTweets(countyname, configname, usetrack, verbose=False):
     """
     Saves the tweets in a json file.
     

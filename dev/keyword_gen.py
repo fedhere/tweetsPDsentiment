@@ -19,6 +19,7 @@ def get_keys(line):
 def genplace_all(placeName, s):
     '''generates keywords for a place'
     placeName (str): the name of the place as it appears on the coordinates file
+    s (???): ???
     '''
 
     tmp = juris_dict[placeName]
@@ -30,15 +31,15 @@ def genplace_all(placeName, s):
         handles = tmp['handles']
 
     print (tmp)
-    generate(tmp['name'], tmp['coords'], kw=tmp['keywords'], line=s, state=tmp['state'], 
+    generate(tmp['name'], tmp['coords'], tmp['keywords'], s, state=tmp['state'], 
              short=tmp['short'], handles=handles, verbose=True)
     
-    generate(tmp['name'], tmp['coords'], kw=tmp['keywords'], line=s, state=tmp['state'], 
+    generate(tmp['name'], tmp['coords'], tmp['keywords'], s, state=tmp['state'], 
              short=tmp['short'], gkw=True, verbose=True)
     
 
 
-def generate(location, coords, kw, line, handles=None, state=None, short=None, 
+def generate(location, coords, kw, apikeys, handles=None, state=None, short=None, 
              gkw=False, verbose=False):
     """
     This function creates a config file 
@@ -46,8 +47,9 @@ def generate(location, coords, kw, line, handles=None, state=None, short=None,
     location (str) - The location of the data being collected. This is 
          necessary in order to name the config file correctly
          
-    coords - The coordinates of the location to add to the config file
+    coords (???)- The coordinates of the location to add to the config file
     
+    FBB PLEASE FIX THIS DOC STRING
     state (str) - state in which the location is, needed to generate file names
 
     short (str)- aks if there is a short version of the location name in order
@@ -64,8 +66,9 @@ def generate(location, coords, kw, line, handles=None, state=None, short=None,
 
     new_track = []
     if not gkw:
-        
+        # track is defined in config_all.py
         for words in track:
+            print (words)
             new_track.append(location + ' ' + words)
             new_track.append(location + words)
             new_track.append(location.upper() + ' ' + words.upper())
@@ -90,12 +93,12 @@ def generate(location, coords, kw, line, handles=None, state=None, short=None,
             new_track.append(w.title())
     
     #adds sections for the config file
-    tokens = get_keys(line)
     parser.add_section('API')
-    parser.set('API', 'consumer_key', tokens[0])
-    parser.set('API', 'consumer_secret', tokens[1])
-    parser.set('API', 'access_token', tokens[2])
-    parser.set('API', 'access_secret', tokens[3])
+    
+    parser.set('API', 'consumer_key', apikeys["API Key"].values[0])
+    parser.set('API', 'consumer_secret', apikeys["API Secret"].values[0])
+    parser.set('API', 'access_token', apikeys["Access token"].values[0])
+    parser.set('API', 'access_secret', apikeys["Access token secret"].values[0])
     
     parser.add_section('KWARGS')
     parser.set('KWARGS', 'filepostfix', placeName)
@@ -113,9 +116,10 @@ def generate(location, coords, kw, line, handles=None, state=None, short=None,
     parser.set('DATE', 'date', datetime.today().isoformat())
 
     outfile = inputDIR + '/placeConfigs/' + placeName + ".cfg"
+    cmd = "mv " + outfile.replace(' ','\ ') + ' ' + \
+                  outfile.replace(' ','\ ') + '_' + datetime.today().isoformat()
     if os.path.isfile(outfile):
-        os.system("mv " + outfile + ' ' + 
-                  outfile + '_' + datetime.today().isoformat()) 
+        os.system(cmd) 
     f = open(outfile, 'w')
     
     if verbose: 
@@ -131,12 +135,10 @@ python keyword_gen.py <place1> (<place2> ... as many as you want, min 1)
 where place needs to be one of the keywords in coords.py
 All names in coords.py are formatted as <county-or-city-name>_<state> all lower case''')
         sys.exit()
-    key_path = pathRoot + '/data/input/keys.csv'
-    f = open(key_path, 'r')
-    for i in range(len(sys.argv[1:])):
-        
-        if i % 4 == 0:
-            l = f.readline()
-                   
-        place = sys.argv[i+1]
-        genplace_all(place ,l)
+    key_path = pathRoot + '/tweetsPDsentiment/data/input/keys.csv'
+    import pandas as pd
+    f = pd.read_csv(key_path)
+    
+    
+    for place in sys.argv[1:]:
+        genplace_all(place ,f[f.jurisdiction == place])

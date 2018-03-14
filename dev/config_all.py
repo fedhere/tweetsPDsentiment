@@ -33,9 +33,9 @@ track = ["police", "pd", "law", "cop", "laws", "cops"] #track is used to create 
     
 general_track = ["police", "law", "cop", "law enforcement", 
                  "criminal justice", "laws", "cops", "lawyers",
-                 "district attorney", "da", "lawyer", "legal", 
+                 "district attorney", "da", "district attorneys", "das", "lawyer", "legal", 
                  "court", "peace", "trial", "courts", "prisons",
                  "jail", "prison", "probation", "parole", 
                  "policing", "crime", "squad", "pigs",
-                 "5-0", "squad", "crimes", "jails"] #general keywords
+                 "5-0", "squad", "crimes", "jails", "judge","judges"] #general keywords
 

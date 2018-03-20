@@ -17,7 +17,8 @@
 #    return True
 
 #ondata_handler = jsonfile_ondata_handler
-pathRoot = '/gws/projects/project-tweetpdsentiment/workspace/share'
+#pathRoot = '/gws/projects/project-tweetpdsentiment/workspace/share'
+pathRoot = '/nfshome/pa1303'
 
 #outdirectory = pathRoot + '/test'
 

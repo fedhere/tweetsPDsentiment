@@ -1,0 +1,51 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = boston_ma
+
+[TRACK]
+r1 = Boston police
+r2 = Bostonpolice
+r3 = BOSTON POLICE
+r4 = BOSTONPOLICE
+r5 = BostonPolice
+r6 = Boston pd
+r7 = Bostonpd
+r8 = BOSTON PD
+r9 = BOSTONPD
+r10 = BostonPd
+r11 = Boston law
+r12 = Bostonlaw
+r13 = BOSTON LAW
+r14 = BOSTONLAW
+r15 = BostonLaw
+r16 = Boston cop
+r17 = Bostoncop
+r18 = BOSTON COP
+r19 = BOSTONCOP
+r20 = BostonCop
+r21 = Boston laws
+r22 = Bostonlaws
+r23 = BOSTON LAWS
+r24 = BOSTONLAWS
+r25 = BostonLaws
+r26 = Boston cops
+r27 = Bostoncops
+r28 = BOSTON COPS
+r29 = BOSTONCOPS
+r30 = BostonCops
+r31 = bostonpolice
+
+[LOCATIONS]
+loc1 = -71.198945
+loc2 = 42.26042
+loc3 = -70.966859
+loc4 = 42.405593
+
+[DATE]
+date = 2018-03-10T21:49:54.347295
+

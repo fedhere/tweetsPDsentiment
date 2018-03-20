@@ -1,0 +1,51 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = el_paso_tx
+
+[TRACK]
+r1 = El Paso police
+r2 = El Pasopolice
+r3 = EL PASO POLICE
+r4 = EL PASOPOLICE
+r5 = El PasoPolice
+r6 = El Paso pd
+r7 = El Pasopd
+r8 = EL PASO PD
+r9 = EL PASOPD
+r10 = El PasoPd
+r11 = El Paso law
+r12 = El Pasolaw
+r13 = EL PASO LAW
+r14 = EL PASOLAW
+r15 = El PasoLaw
+r16 = El Paso cop
+r17 = El Pasocop
+r18 = EL PASO COP
+r19 = EL PASOCOP
+r20 = El PasoCop
+r21 = El Paso laws
+r22 = El Pasolaws
+r23 = EL PASO LAWS
+r24 = EL PASOLAWS
+r25 = El PasoLaws
+r26 = El Paso cops
+r27 = El Pasocops
+r28 = EL PASO COPS
+r29 = EL PASOCOPS
+r30 = El PasoCops
+r31 = EPPOLICE
+
+[LOCATIONS]
+loc1 = -106.653179
+loc2 = 31.611867
+loc3 = -106.19244
+loc4 = 32.004576
+
+[DATE]
+date = 2018-03-10T21:49:54.654849
+

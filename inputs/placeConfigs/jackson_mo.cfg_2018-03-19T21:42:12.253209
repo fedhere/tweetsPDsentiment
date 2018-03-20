@@ -1,0 +1,65 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = jackson_mo
+
+[TRACK]
+r1 = Jackson police
+r2 = Jacksonpolice
+r3 = JACKSON POLICE
+r4 = JACKSONPOLICE
+r5 = JacksonPolice
+r6 = Jackson pd
+r7 = Jacksonpd
+r8 = JACKSON PD
+r9 = JACKSONPD
+r10 = JacksonPd
+r11 = Jackson law
+r12 = Jacksonlaw
+r13 = JACKSON LAW
+r14 = JACKSONLAW
+r15 = JacksonLaw
+r16 = Jackson cop
+r17 = Jacksoncop
+r18 = JACKSON COP
+r19 = JACKSONCOP
+r20 = JacksonCop
+r21 = Jackson laws
+r22 = Jacksonlaws
+r23 = JACKSON LAWS
+r24 = JACKSONLAWS
+r25 = JacksonLaws
+r26 = Jackson cops
+r27 = Jacksoncops
+r28 = JACKSON COPS
+r29 = JACKSONCOPS
+r30 = JacksonCops
+r31 = Cape Girardeau police
+r32 = Cape Girardeaupolice
+r33 = Cape Girardeau pd
+r34 = Cape Girardeaupd
+r35 = Cape Girardeau law
+r36 = Cape Girardeaulaw
+r37 = Cape Girardeau cop
+r38 = Cape Girardeaucop
+r39 = Cape Girardeau laws
+r40 = Cape Girardeaulaws
+r41 = Cape Girardeau cops
+r42 = Cape Girardeaucops
+r43 = JacksonMOPD
+r44 = capepolice
+r45 = Prosecuting Attorney
+
+[LOCATIONS]
+loc1 = -94.643005
+loc2 = 38.824799
+loc3 = -94.110168
+loc4 = 39.238704
+
+[DATE]
+date = 2018-03-10T21:49:54.883629
+

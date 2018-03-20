@@ -1,0 +1,107 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = redlands_ca_gkw
+
+[TRACK]
+r1 = police
+r2 = POLICE
+r3 = Police
+r4 = law
+r5 = LAW
+r6 = Law
+r7 = cop
+r8 = COP
+r9 = Cop
+r10 = law enforcement
+r11 = LAW ENFORCEMENT
+r12 = Law Enforcement
+r13 = criminal justice
+r14 = CRIMINAL JUSTICE
+r15 = Criminal Justice
+r16 = laws
+r17 = LAWS
+r18 = Laws
+r19 = cops
+r20 = COPS
+r21 = Cops
+r22 = lawyers
+r23 = LAWYERS
+r24 = Lawyers
+r25 = district attorney
+r26 = DISTRICT ATTORNEY
+r27 = District Attorney
+r28 = da
+r29 = DA
+r30 = Da
+r31 = lawyer
+r32 = LAWYER
+r33 = Lawyer
+r34 = legal
+r35 = LEGAL
+r36 = Legal
+r37 = court
+r38 = COURT
+r39 = Court
+r40 = peace
+r41 = PEACE
+r42 = Peace
+r43 = trial
+r44 = TRIAL
+r45 = Trial
+r46 = courts
+r47 = COURTS
+r48 = Courts
+r49 = prisons
+r50 = PRISONS
+r51 = Prisons
+r52 = jail
+r53 = JAIL
+r54 = Jail
+r55 = prison
+r56 = PRISON
+r57 = Prison
+r58 = probation
+r59 = PROBATION
+r60 = Probation
+r61 = parole
+r62 = PAROLE
+r63 = Parole
+r64 = policing
+r65 = POLICING
+r66 = Policing
+r67 = crime
+r68 = CRIME
+r69 = Crime
+r70 = squad
+r71 = SQUAD
+r72 = Squad
+r73 = pigs
+r74 = PIGS
+r75 = Pigs
+r76 = 5-0
+r77 = 5-0
+r78 = 5-0
+r79 = squad
+r80 = SQUAD
+r81 = Squad
+r82 = crimes
+r83 = CRIMES
+r84 = Crimes
+r85 = jails
+r86 = JAILS
+r87 = Jails
+
+[LOCATIONS]
+loc1 = -117.25708
+loc2 = 34.108485
+loc3 = -117.036929
+loc4 = 33.966542
+
+[DATE]
+date = 2018-03-10T21:49:55.284908
+

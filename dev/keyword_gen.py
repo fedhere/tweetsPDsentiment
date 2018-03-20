@@ -135,7 +135,7 @@ python keyword_gen.py <place1> (<place2> ... as many as you want, min 1)
 where place needs to be one of the keywords in coords.py
 All names in coords.py are formatted as <county-or-city-name>_<state> all lower case''')
         sys.exit()
-    key_path = pathRoot + '/tweetsPDsentiment/data/input/keys.csv'
+    key_path = pathRoot + '/tweetsPDsentiment/inputs/keys.csv'
     import pandas as pd
     f = pd.read_csv(key_path)
     

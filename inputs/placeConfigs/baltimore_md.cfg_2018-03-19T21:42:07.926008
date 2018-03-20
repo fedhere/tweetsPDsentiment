@@ -1,0 +1,52 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = baltimore_md
+
+[TRACK]
+r1 = Baltimore police
+r2 = Baltimorepolice
+r3 = BALTIMORE POLICE
+r4 = BALTIMOREPOLICE
+r5 = BaltimorePolice
+r6 = Baltimore pd
+r7 = Baltimorepd
+r8 = BALTIMORE PD
+r9 = BALTIMOREPD
+r10 = BaltimorePd
+r11 = Baltimore law
+r12 = Baltimorelaw
+r13 = BALTIMORE LAW
+r14 = BALTIMORELAW
+r15 = BaltimoreLaw
+r16 = Baltimore cop
+r17 = Baltimorecop
+r18 = BALTIMORE COP
+r19 = BALTIMORECOP
+r20 = BaltimoreCop
+r21 = Baltimore laws
+r22 = Baltimorelaws
+r23 = BALTIMORE LAWS
+r24 = BALTIMORELAWS
+r25 = BaltimoreLaws
+r26 = Baltimore cops
+r27 = Baltimorecops
+r28 = BALTIMORE COPS
+r29 = BALTIMORECOPS
+r30 = BaltimoreCops
+r31 = BaltimorePolice
+r32 = baltimoresao
+
+[LOCATIONS]
+loc1 = -76.770649
+loc2 = 39.190476
+loc3 = -76.487698
+loc4 = 39.414438
+
+[DATE]
+date = 2018-03-10T21:49:54.123852
+

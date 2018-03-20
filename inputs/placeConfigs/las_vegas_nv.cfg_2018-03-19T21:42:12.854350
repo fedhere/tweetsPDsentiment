@@ -1,0 +1,64 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = las_vegas_nv
+
+[TRACK]
+r1 = Las Vegas police
+r2 = Las Vegaspolice
+r3 = LAS VEGAS POLICE
+r4 = LAS VEGASPOLICE
+r5 = Las VegasPolice
+r6 = Las Vegas pd
+r7 = Las Vegaspd
+r8 = LAS VEGAS PD
+r9 = LAS VEGASPD
+r10 = Las VegasPd
+r11 = Las Vegas law
+r12 = Las Vegaslaw
+r13 = LAS VEGAS LAW
+r14 = LAS VEGASLAW
+r15 = Las VegasLaw
+r16 = Las Vegas cop
+r17 = Las Vegascop
+r18 = LAS VEGAS COP
+r19 = LAS VEGASCOP
+r20 = Las VegasCop
+r21 = Las Vegas laws
+r22 = Las Vegaslaws
+r23 = LAS VEGAS LAWS
+r24 = LAS VEGASLAWS
+r25 = Las VegasLaws
+r26 = Las Vegas cops
+r27 = Las Vegascops
+r28 = LAS VEGAS COPS
+r29 = LAS VEGASCOPS
+r30 = Las VegasCops
+r31 = Vegas police
+r32 = Vegaspolice
+r33 = Vegas pd
+r34 = Vegaspd
+r35 = Vegas law
+r36 = Vegaslaw
+r37 = Vegas cop
+r38 = Vegascop
+r39 = Vegas laws
+r40 = Vegaslaws
+r41 = Vegas cops
+r42 = Vegascops
+r43 = lvmpd
+r44 = lasvegasda
+
+[LOCATIONS]
+loc1 = -115.447428
+loc2 = 36.01523
+loc3 = -115.006297
+loc4 = 36.384162
+
+[DATE]
+date = 2018-03-10T21:49:54.994145
+

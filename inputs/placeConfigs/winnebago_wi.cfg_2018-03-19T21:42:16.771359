@@ -1,0 +1,64 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = winnebago_wi
+
+[TRACK]
+r1 = Winnebago police
+r2 = Winnebagopolice
+r3 = WINNEBAGO POLICE
+r4 = WINNEBAGOPOLICE
+r5 = WinnebagoPolice
+r6 = Winnebago pd
+r7 = Winnebagopd
+r8 = WINNEBAGO PD
+r9 = WINNEBAGOPD
+r10 = WinnebagoPd
+r11 = Winnebago law
+r12 = Winnebagolaw
+r13 = WINNEBAGO LAW
+r14 = WINNEBAGOLAW
+r15 = WinnebagoLaw
+r16 = Winnebago cop
+r17 = Winnebagocop
+r18 = WINNEBAGO COP
+r19 = WINNEBAGOCOP
+r20 = WinnebagoCop
+r21 = Winnebago laws
+r22 = Winnebagolaws
+r23 = WINNEBAGO LAWS
+r24 = WINNEBAGOLAWS
+r25 = WinnebagoLaws
+r26 = Winnebago cops
+r27 = Winnebagocops
+r28 = WINNEBAGO COPS
+r29 = WINNEBAGOCOPS
+r30 = WinnebagoCops
+r31 = Oshkosh police
+r32 = Oshkoshpolice
+r33 = Oshkosh pd
+r34 = Oshkoshpd
+r35 = Oshkosh law
+r36 = Oshkoshlaw
+r37 = Oshkosh cop
+r38 = Oshkoshcop
+r39 = Oshkosh laws
+r40 = Oshkoshlaws
+r41 = Oshkosh cops
+r42 = Oshkoshcops
+r43 = WCSO_Wisconsin
+r44 = oshkoshpd
+
+[LOCATIONS]
+loc1 = -88.901814
+loc2 = 43.880343
+loc3 = -88.397991
+loc4 = 44.255881
+
+[DATE]
+date = 2018-03-10T21:49:55.713088
+

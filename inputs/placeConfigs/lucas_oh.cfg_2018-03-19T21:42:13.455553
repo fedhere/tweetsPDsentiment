@@ -1,0 +1,64 @@
+[API]
+consumer_key = 1F0ULrbBcdxjCEwXVaMOp7zki
+consumer_secret = B56M0Q2e51yApgiJNv43qk2o8t7usAxYixltBej4xJSyGbTMGg
+access_token = 915237585093562368-ejAFNn7nkkilDFrMqqA6vexZFkB74tz
+access_secret = ry8UEE3R6iLsnW74T6q4Tl3393a99siWhAxzbuYOomKdt
+
+[KWARGS]
+filepostfix = lucas_oh
+
+[TRACK]
+r1 = Lucas police
+r2 = Lucaspolice
+r3 = LUCAS POLICE
+r4 = LUCASPOLICE
+r5 = LucasPolice
+r6 = Lucas pd
+r7 = Lucaspd
+r8 = LUCAS PD
+r9 = LUCASPD
+r10 = LucasPd
+r11 = Lucas law
+r12 = Lucaslaw
+r13 = LUCAS LAW
+r14 = LUCASLAW
+r15 = LucasLaw
+r16 = Lucas cop
+r17 = Lucascop
+r18 = LUCAS COP
+r19 = LUCASCOP
+r20 = LucasCop
+r21 = Lucas laws
+r22 = Lucaslaws
+r23 = LUCAS LAWS
+r24 = LUCASLAWS
+r25 = LucasLaws
+r26 = Lucas cops
+r27 = Lucascops
+r28 = LUCAS COPS
+r29 = LUCASCOPS
+r30 = LucasCops
+r31 = Toledo police
+r32 = Toledopolice
+r33 = Toledo pd
+r34 = Toledopd
+r35 = Toledo law
+r36 = Toledolaw
+r37 = Toledo cop
+r38 = Toledocop
+r39 = Toledo laws
+r40 = Toledolaws
+r41 = Toledo cops
+r42 = Toledocops
+r43 = toledopolice
+r44 = Prosecutor's Office
+
+[LOCATIONS]
+loc1 = -83.893994
+loc2 = 41.406872
+loc3 = -83.178509
+loc4 = 41.739738
+
+[DATE]
+date = 2018-03-10T21:49:55.104236
+

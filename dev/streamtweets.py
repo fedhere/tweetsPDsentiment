@@ -5,7 +5,7 @@ import threading
 import os
 from config_all import *
 
-pidDIR = workDIR + "/pids"
+pidDIR = workDIR + "pids"
 
 if __name__ == '__main__':
     
@@ -33,6 +33,12 @@ All names in coords.py are formatted as <county-or-city-name>_<state> all lower 
         tgkw.start()
         
         filename = os.path.join(pidDIR, arg + '_PID.dat')
+        if not os.path.isdir(pidDIR):
+            try:
+                os.makedirs(pidDIR)
+            except OSError as exc: # Guard against race condition
+                if exc.errno != errno.EEXIST:
+                    raise
         # this writes the pid to ../pids/detroit_mi_PID.dat or whatever
         # then you can create a cron job that looks if for every jurisdiction the pid is still alive
         

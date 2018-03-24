@@ -10,11 +10,11 @@ import numpy as np
 #from datetime import date
 import datetime as dt
 from config_all import *
-import configparser
+import ConfigParser
 from datetime import date
 import os
 import errno
-
+import csv
 
 
 def make_directory(countyName, date):
@@ -29,8 +29,10 @@ def make_directory(countyName, date):
     
     #pathRoot is taken from the config_all file
     
-    outdirectory = pathRoot + '/data/output/' + countyName + '/tweetStreams/' + date
+    outdirectory = pathRoot + '/tweetsPDsentiment/output/' + countyName + '/tweetStreams/' + date
     return outdirectory
+
+
 
 def grabTweets(countyname, configname, usetrack, verbose=False):
     """
@@ -39,7 +41,7 @@ def grabTweets(countyname, configname, usetrack, verbose=False):
     
     """
     
-    configs = configparser.ConfigParser()
+    configs = ConfigParser.ConfigParser()
     configfile = inputDIR + "/placeConfigs/" + configname + ".cfg"
     configs.read(configfile)
     print (configs)
@@ -52,6 +54,7 @@ def grabTweets(countyname, configname, usetrack, verbose=False):
                 raise
 
     kwargs = {}
+    print(configfile)
     #for k in configs['KWARGS'].keys():
     #    print (k)
     #    kwargs[k] = configs['KWARGS'][k]
@@ -71,7 +74,7 @@ def grabTweets(countyname, configname, usetrack, verbose=False):
     
 
     #just to be sure about the sorting creating an argsort from the keys
-
+    print('Next 1')
     if usetrack:
         locations = None
         thistrack = track
@@ -79,10 +82,15 @@ def grabTweets(countyname, configname, usetrack, verbose=False):
 
     else:
         thistrack = None
-        locations = [configs.get('LOCATIONS', i) for i in configs.options('LOCATIONS')]
-        
-        
+        locations = [float(configs.get('LOCATIONS', i)) for i in configs.options('LOCATIONS')]
+    
+    pid = os.getpid()
+    pidfile = inputDIR + '/pids.csv'
+    with open(pidfile, 'a') as csvfile:
+        writer = csv.writer(csvfile, delimiter=',')
+        writer.writerow([pid, kwargs['filepostfix']])
     def jsonfile_ondata_handler(data, directory, filepostfix):
+
         tweet = json.loads(data)
         if usetrack:
             filename = join(directory, date.today().isoformat() + '_' + filepostfix + '.json')
@@ -97,9 +105,10 @@ def grabTweets(countyname, configname, usetrack, verbose=False):
                     
         return True
     
+    print ('Next 3')
 
     ondata_handler = jsonfile_ondata_handler
-
+    print (consumer_key, consumer_secret, thistrack, locations)
     twitStream(consumer_key = consumer_key,
                consumer_secret = consumer_secret,
                access_token = access_token,
@@ -107,8 +116,10 @@ def grabTweets(countyname, configname, usetrack, verbose=False):
                ondata_handler = ondata_handler, #function direction where to send data
                track = thistrack, #None default value
                locations = locations, #None default value
-               verbose = verbose, #Display extra messages
+               verbose = True, #Display extra messages
                **kwargs)
+    print ('Next 4')
+    
     return 0
 
 

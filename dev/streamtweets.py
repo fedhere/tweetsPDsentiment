@@ -1,3 +1,7 @@
+"""
+streamtweets.py is defunct and stream.py should be used instead
+"""
+
 from __future__ import print_function
 from tweepyUtils import grabTweets
 import sys

@@ -16,10 +16,11 @@ def get_keys(line):
     line = line.split(',')
     return line
 
-def genplace_all(placeName, s):
+def genplace_all(placeName, keys):
     '''generates keywords for a place'
     placeName (str): the name of the place as it appears on the coordinates file
-    s (???): ???
+    keys (dataFrame): a row in a dataframe made from the keys.csv file. It
+                   contains the api keys for the lcoation
     '''
 
     tmp = juris_dict[placeName]
@@ -31,10 +32,13 @@ def genplace_all(placeName, s):
         handles = tmp['handles']
 
     print (tmp)
-    generate(tmp['name'], tmp['coords'], tmp['keywords'], s, state=tmp['state'], 
+    
+    #creates a configuration file using location specific keywords
+    generate(tmp['name'], tmp['coords'], tmp['keywords'], keys, state=tmp['state'], 
              short=tmp['short'], handles=handles, verbose=True)
     
-    generate(tmp['name'], tmp['coords'], tmp['keywords'], s, state=tmp['state'], 
+    #creates a configuration file that uses general keywords in a set of coordinates
+    generate(tmp['name'], tmp['coords'], tmp['keywords'], keys, state=tmp['state'], 
              short=tmp['short'], gkw=True, verbose=True)
     
 
@@ -42,20 +46,28 @@ def genplace_all(placeName, s):
 def generate(location, coords, kw, apikeys, handles=None, state=None, short=None, 
              gkw=False, verbose=False):
     """
-    This function creates a config file 
+    This function creates a configuration file 
     
     location (str) - The location of the data being collected. This is 
          necessary in order to name the config file correctly
          
-    coords (???)- The coordinates of the location to add to the config file
+    coords (list)- The coordinates of the location to add to the config file
     
-    FBB PLEASE FIX THIS DOC STRING
+    kw (list) - keywords specific to a location
+    
+    apikeys (dataframe) - contains tweepy authorization keys for the location
+    
+    handles (list) - contains twitter handles important to a location
+    
     state (str) - state in which the location is, needed to generate file names
 
     short (str)- aks if there is a short version of the location name in order
         to create a keyword with the short (default None)
         
+        
     gkw (bool) - general keywords. if True creates a config file with gkw instead of location  specific keywords (default False)
+    
+    verbose (bool) - if True, it prints where configuration files are being saved
          
     """
     
@@ -116,6 +128,8 @@ def generate(location, coords, kw, apikeys, handles=None, state=None, short=None
     parser.set('DATE', 'date', datetime.today().isoformat())
 
     outfile = inputDIR + '/placeConfigs/' + placeName + ".cfg"
+    
+    #saves date of older configuration files
     cmd = "mv " + outfile.replace(' ','\ ') + ' ' + \
                   outfile.replace(' ','\ ') + '_' + datetime.today().isoformat()
     if os.path.isfile(outfile):
@@ -132,7 +146,7 @@ if __name__ == '__main__':
     if len(sys.argv) < 2:
         print ('''Usage: 
 python keyword_gen.py <place1> (<place2> ... as many as you want, min 1)
-where place needs to be one of the keywords in coords.py
+where place needs to be one of the keywords in jurisdictions.py
 All names in coords.py are formatted as <county-or-city-name>_<state> all lower case''')
         sys.exit()
     key_path = pathRoot + '/tweetsPDsentiment/inputs/keys.csv'

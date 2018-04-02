@@ -37,14 +37,21 @@ def make_directory(countyName, date):
 def grabTweets(countyname, configname, usetrack, verbose=False):
     """
     Saves the tweets in a json file.
-    
+    countyname: name of the location
+    configname: Either the same as countyname or countyname + _gkw
+    usetrack: True or False. Asks if a location specific track will be used.
+    this should be true if configname = countyname
+    verbose: TRue of False. Provides more detailed logging
     
     """
     
+    #Read the configuration file for the location
     configs = ConfigParser.ConfigParser()
     configfile = inputDIR + "/placeConfigs/" + configname + ".cfg"
     configs.read(configfile)
     print (configs)
+    
+    #create a directory to pass to the json file handler
     outdirectory = make_directory(countyname, date.today().isoformat())
     if not os.path.isdir(outdirectory):
         try:
@@ -64,17 +71,17 @@ def grabTweets(countyname, configname, usetrack, verbose=False):
         kwargs[k] = configs.get('KWARGS', k)
         
     
-        
+    #gets track from the configuration file    
     track = [configs.get('TRACK', i) for i in configs.options('TRACK')]
     
+    #gets authorization from the configuration file
     consumer_key = configs.get('API', 'consumer_key')
     consumer_secret = configs.get('API', 'consumer_secret')
     access_token = configs.get('API', 'access_token')
     access_secret = configs.get('API', 'access_secret')
     
 
-    #just to be sure about the sorting creating an argsort from the keys
-    print('Next 1')
+    #print('Next 1')
     if usetrack:
         locations = None
         thistrack = track
@@ -84,11 +91,14 @@ def grabTweets(countyname, configname, usetrack, verbose=False):
         thistrack = None
         locations = [float(configs.get('LOCATIONS', i)) for i in configs.options('LOCATIONS')]
     
+    #gets the pid of process that runs this function and saves it in a file
     pid = os.getpid()
     pidfile = inputDIR + '/pids.csv'
     with open(pidfile, 'a') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
         writer.writerow([pid, kwargs['filepostfix']])
+        
+    #jsonfile_ondata_handler determines how to save the tweets
     def jsonfile_ondata_handler(data, directory, filepostfix):
 
         tweet = json.loads(data)
@@ -105,10 +115,11 @@ def grabTweets(countyname, configname, usetrack, verbose=False):
                     
         return True
     
-    print ('Next 3')
+    #print ('Next 3')
 
     ondata_handler = jsonfile_ondata_handler
-    print (consumer_key, consumer_secret, thistrack, locations)
+    #run the twitter stream to collect tweets
+    
     twitStream(consumer_key = consumer_key,
                consumer_secret = consumer_secret,
                access_token = access_token,

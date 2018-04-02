@@ -1,0 +1,15 @@
+baltimore_md
+rockland_ny
+el_paso_tx
+bernalillo_nm
+lucas_oh
+nashville_tn
+calgary_ab
+baton_rouge_la
+los_angeles_ca
+douglas_co
+thurston_wa
+genesee_mi
+richland_sc
+las_vegas_nv
+new_york_ny

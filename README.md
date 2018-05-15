@@ -19,7 +19,9 @@ Jurisdiction is the location of interest. Name is the owner of the API keys. The
 
 Then in the inputs folder add the location to the dictionary juris_dict inside jurisdictions.py. This should include any the coordinates and any specific terms you are interested in.
 
-Running keyword_gen.py that’s inside the dev folder will create the configuration files in the location inputs/placeConfigs. Any number of locations can be called after keyword_gen.py.
+Running keyword_gen.py that’s inside the dev folder will create the configuration files in the location inputs/placeConfigs. Any number of locations can be called after keyword_gen.py. An example call is:
+
+    python keyword_gen.py baltimore_md new_york_ny
 
 Tweets can be collected by running stream.py with the location name. 
 ### Output

@@ -2,7 +2,9 @@
 This code lets users collect streaming tweets related to criminal justice from any location using the tweepy api. 
 ### Getting Started
 In order to collect tweets from the command line inside the dev folder run
+
     python stream.py <location name>
+    
 The location name should be city_state. 
 Example: cincinnati_oh
 This location must also have two configuration files named <location name>.cfg and <location name_gkw>.cfg
